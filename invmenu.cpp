@@ -721,7 +721,7 @@ void editBook(bookType books[], int &recordCount) {
 	bookType original;
 	bool nineLastChoice = false;
 	
-	*books = bookType[recordCount]; //just changed the data structure for edditBook
+	books = new bookType[recordCount]; //just changed the data structure for edditBook
 
 
 	index = lookUpBook(books, recordCount, 'e');
